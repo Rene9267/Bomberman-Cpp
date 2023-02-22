@@ -1,0 +1,10 @@
+﻿  Window.cpp
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,43): warning C4838: la conversione da 'const float' a 'int' richiede una conversione che supporta un minor numero di dati
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,43): warning C4244: 'inizializzazione': conversione da 'const float' a 'int'. Possibile perdita di dati.
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,61): warning C4838: la conversione da 'const float' a 'int' richiede una conversione che supporta un minor numero di dati
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,61): warning C4244: 'inizializzazione': conversione da 'const float' a 'int'. Possibile perdita di dati.
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,49): warning C4838: la conversione da 'float' a 'int' richiede una conversione che supporta un minor numero di dati
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,49): warning C4244: 'inizializzazione': conversione da 'float' a 'int'. Possibile perdita di dati.
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,68): warning C4838: la conversione da 'float' a 'int' richiede una conversione che supporta un minor numero di dati
+C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,68): warning C4244: 'inizializzazione': conversione da 'float' a 'int'. Possibile perdita di dati.
+  Bomberman-C++.vcxproj -> C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\x64\Debug\Bomberman-C++.exe
