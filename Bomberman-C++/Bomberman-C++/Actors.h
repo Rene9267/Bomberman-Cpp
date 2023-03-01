@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Texture.h"
 #ifndef VECTOR
 #include "Utility.h"
 #endif // VECTOR
@@ -10,6 +10,7 @@ namespace actors {
 	{
 	public:
 		collections::Vector2 position;
+		Texture texture;
 		Actor() = default;
 		~Actor() = default;
 	};
@@ -39,7 +40,8 @@ namespace actors {
 			unsigned int num_score;
 			unsigned int speed;
 			int arrayposition;
-			Player();
+			Player(SDL_Renderer* renderer);
+			Player() = delete;
 			~Player() = default;
 		};
 	}

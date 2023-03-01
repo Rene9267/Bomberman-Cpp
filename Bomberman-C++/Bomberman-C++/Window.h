@@ -22,8 +22,6 @@ namespace game
 		bool inputnull = false;
 	protected:
 		SDL_Window* window = nullptr;
-		SDL_Renderer* renderer = nullptr;
-		SDL_Texture* texture = nullptr;
 		SDL_Texture* texture_wall = nullptr;
 		map::Map* sized_map;
 		bool failed = false;
@@ -31,8 +29,9 @@ namespace game
 		void EndFrame();
 
 	public:
+		SDL_Renderer* renderer = nullptr;
 		std::vector<actors::Actor> actor_to_renderer;
-		actors::player::Player player;
+		//actors::player::Player player;
 		Window() = delete;
 		Window(const std::string& title, const int width, const int height);
 		Window(const Window& other) = delete;

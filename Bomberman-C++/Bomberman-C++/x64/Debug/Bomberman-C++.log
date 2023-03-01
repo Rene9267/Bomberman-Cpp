@@ -1,10 +1,19 @@
-﻿  Window.cpp
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,43): warning C4838: la conversione da 'const float' a 'int' richiede una conversione che supporta un minor numero di dati
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,43): warning C4244: 'inizializzazione': conversione da 'const float' a 'int'. Possibile perdita di dati.
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,61): warning C4838: la conversione da 'const float' a 'int' richiede una conversione che supporta un minor numero di dati
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(179,61): warning C4244: 'inizializzazione': conversione da 'const float' a 'int'. Possibile perdita di dati.
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,49): warning C4838: la conversione da 'float' a 'int' richiede una conversione che supporta un minor numero di dati
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,49): warning C4244: 'inizializzazione': conversione da 'float' a 'int'. Possibile perdita di dati.
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,68): warning C4838: la conversione da 'float' a 'int' richiede una conversione che supporta un minor numero di dati
-C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\Bomberman-C++\Window.cpp(183,68): warning C4244: 'inizializzazione': conversione da 'float' a 'int'. Possibile perdita di dati.
-  Bomberman-C++.vcxproj -> C:\Programmi Vari\Informatics Projects\AIV_3th_Lessons\C++ Files\Bomberman-C++\x64\Debug\Bomberman-C++.exe
+﻿  Actors.cpp
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Actors.cpp(5): error C2280: 'actors::Actor::Actor(void)': tentativo di fare riferimento a una funzione eliminata
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Actors.h(14): message : vedere la dichiarazione di 'actors::Actor::Actor'
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Actors.h(14,3): message : 'actors::Actor::Actor(void)': la funzione è stata eliminata in modo implicito perché un elemento membro dati richiama una funzione 'Texture::Texture(void)' eliminata o inaccessibile
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Texture.h(9,2): message : 'Texture::Texture(void)': la funzione è stata eliminata in modo esplicito
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Actors.cpp(21): error C2280: 'actors::Actor::Actor(void)': tentativo di fare riferimento a una funzione eliminata
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Actors.h(14): message : vedere la dichiarazione di 'actors::Actor::Actor'
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Actors.h(14,3): message : 'actors::Actor::Actor(void)': la funzione è stata eliminata in modo implicito perché un elemento membro dati richiama una funzione 'Texture::Texture(void)' eliminata o inaccessibile
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Texture.h(9,2): message : 'Texture::Texture(void)': la funzione è stata eliminata in modo esplicito
+  Main.cpp
+  Window.cpp
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Window.cpp(127,43): warning C4838: la conversione da 'const float' a 'int' richiede una conversione che supporta un minor numero di dati
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Window.cpp(127,43): warning C4244: 'inizializzazione': conversione da 'const float' a 'int'. Possibile perdita di dati.
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Window.cpp(127,61): warning C4838: la conversione da 'const float' a 'int' richiede una conversione che supporta un minor numero di dati
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Window.cpp(127,61): warning C4244: 'inizializzazione': conversione da 'const float' a 'int'. Possibile perdita di dati.
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Window.cpp(131,34): error C2065: 'player': identificatore non dichiarato
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Window.cpp(131,53): error C2065: 'player': identificatore non dichiarato
+C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\Bomberman-C++\Window.cpp(132,27): error C2065: 'texture': identificatore non dichiarato
+  Generazione del codice in corso...

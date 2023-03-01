@@ -29,7 +29,7 @@ int main(int argc, char** argv)
 {
 	game::Window window("C++ addicted", 512, 512);
 	auto my_game = std::make_shared<MyGame>();
-	actors::player::Player pino;
+	actors::player::Player pino(window.renderer);
 	//auto actor_base = std::make_shared<game::Actor>();
 	//my_game->AddTickables(actor_base);
 	window.actor_to_renderer.push_back(pino);
