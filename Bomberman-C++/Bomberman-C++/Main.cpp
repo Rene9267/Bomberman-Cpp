@@ -1,10 +1,16 @@
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
+#define SDL_MAIN_HANDLED
+#include "SDL.h"
+
+#define VECTOR
+#include "Utility.h"
+#include "Texture.h"
 #include "Actors.h"
 #include "Map.h"
 #include "Objects.h"
 #include "Window.h"
 
-#define VECTOR
-#include "Utility.h"
 
 using tickable_vector = std::vector<std::shared_ptr<game::ITickable>>;
 

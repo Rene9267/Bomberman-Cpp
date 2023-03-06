@@ -2,6 +2,7 @@
 
 #ifndef VECTOR
 #include "Utility.h"
+#include "Texture.h"
 #endif // VECTOR
 
 namespace map {
@@ -21,14 +22,14 @@ namespace map {
 			collections::Vector2 position;
 			CellType type;
 			BonusType bonus;
-			Cell();/*(const CellType in_type, const BonusType in_bonus);*/
+			Texture texture;
+			void Cell_init(SDL_Renderer* renderer);/*(const CellType in_type, const BonusType in_bonus);*/
 			~Cell() = default;
-
+			Cell() = default;
 		private:
 
 		};
 
-		
 	}
 
 	class Map
@@ -36,7 +37,7 @@ namespace map {
 	public:
 		std::array<map::cell_type::Cell, 256 > Mappedsize;
 		Map() = delete;
-		Map(const int windowSizeX, const int windowSizeY);
+		Map(const int windowSizeX, const int windowSizeY, SDL_Renderer* renderer);
 		~Map() = default;
 
 	private:
@@ -45,6 +46,6 @@ namespace map {
 		const int cellsize = 32;
 	};
 
-	
+
 }
 

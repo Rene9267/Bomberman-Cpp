@@ -1,6 +1,6 @@
-#include "SDL.h"
-#include "stb_image.h"
+#pragma once
 #include "Texture.h"
+
 Texture::Texture(const char* path, int width, int height, SDL_Renderer* renderer) {
 	int channels;
 	unsigned char* pixels = stbi_load("Bomberman_head.png", &width, &height, &channels, 4);

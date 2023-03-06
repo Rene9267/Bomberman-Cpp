@@ -1,6 +1,7 @@
 #pragma once
-#include "Texture.h"
+
 #ifndef VECTOR
+#include "Texture.h"
 #include "Utility.h"
 #endif // VECTOR
 

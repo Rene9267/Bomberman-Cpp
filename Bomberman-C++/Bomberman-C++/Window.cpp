@@ -1,13 +1,8 @@
 #include "Window.h"
-#include "SDL.h"
-#include <iostream>
-
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
 
 game::Window::Window(const std::string& title, const int width, const int height)
 {
-	sized_map = new map::Map(width, height);
+	sized_map = new map::Map(width, height, renderer);
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_GAMECONTROLLER) != 0)
 	{
 		SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
@@ -30,9 +25,6 @@ game::Window::Window(const std::string& title, const int width, const int height
 		failed = true;
 		return;
 	}
-
-	
-
 	return;
 }
 
@@ -118,7 +110,7 @@ void game::Window::StartFrame(bool running) {
 //}
 
 void game::Window::EndFrame() {
-	UpdatePlayerInput();
+	//UpdatePlayerInput();
 	SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
 	SDL_RenderClear(renderer);
 	for (const auto actor : sized_map->Mappedsize)
@@ -128,8 +120,12 @@ void game::Window::EndFrame() {
 			SDL_RenderCopy(renderer, texture_wall, nullptr, &target_rect);
 		}
 	}
-	SDL_Rect target_rect_player = { player.position.x, player.position.y, 32, 32 };
-	SDL_RenderCopy(renderer, texture, nullptr, &target_rect_player);
+	for (const auto texture : actor_to_renderer)
+	{
+	SDL_Rect target_rect_player = { texture.position.x, texture.position.y, 32, 32 };
+	SDL_RenderCopy(renderer, texture.texture.texture, nullptr, &target_rect_player);
+	}
+
 	SDL_RenderPresent(renderer);
 }
 

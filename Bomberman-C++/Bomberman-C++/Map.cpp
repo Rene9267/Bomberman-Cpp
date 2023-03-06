@@ -1,6 +1,6 @@
 #include "Map.h"
 
-map::Map::Map(const int windowSizeX, const int windowSizeY) : mapsizeX(windowSizeX), mapsizeY(windowSizeY)
+map::Map::Map(const int windowSizeX, const int windowSizeY, SDL_Renderer* renderer) : mapsizeX(windowSizeX), mapsizeY(windowSizeY)
 {
 	auto xcycle = windowSizeX / cellsize;
 	auto ycycle = windowSizeY / cellsize;
@@ -11,6 +11,7 @@ map::Map::Map(const int windowSizeX, const int windowSizeY) : mapsizeX(windowSiz
 	{
 		for (int y = 0; y < ycycle; y++)
 		{
+			Mappedsize[y + (xcycle * x)].Cell_init(renderer);
 			Mappedsize[y + (xcycle * x)].position.x = xoffset;
 			Mappedsize[y + (xcycle * x)].position.y = yoffset;
 			Mappedsize[y + (xcycle * x)].type = cell_type::CellType::Ground;
@@ -26,8 +27,13 @@ map::Map::Map(const int windowSizeX, const int windowSizeY) : mapsizeX(windowSiz
 	}
 }
 
-map::cell_type::Cell::Cell()/*(const CellType in_type, const BonusType in_bonus) : type(in_type), bonus(in_bonus)*/
+void map::cell_type::Cell::Cell_init(SDL_Renderer* renderer)/*(const CellType in_type, const BonusType in_bonus) : type(in_type), bonus(in_bonus)*/
 {
 	type = CellType::Ground;
 	bonus = BonusType::None;
+
+	int width = 32;
+	int height = 32;
+
+	texture = Texture("Wall.png", width, height, renderer);
 }

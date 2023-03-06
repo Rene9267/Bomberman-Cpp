@@ -3,11 +3,13 @@
 #include <string>
 #include <memory>
 #include <functional>
-#include "Actors.h"
-#include "Map.h"
+#include <iostream>
 
 #ifndef VECTOR
+#include "Actors.h"
+#include "Map.h"
 #include "Utility.h"
+#include "SDL.h"
 #endif // VECTOR
 
 struct SDL_Window;
@@ -42,6 +44,6 @@ namespace game
 		void Run(std::shared_ptr<ITickable> tickable);
 		void Run(std::function<void(const float)> tick);
 		void Run(std::unique_ptr<ITickable> tickable);
-		void UpdatePlayerInput();
+		//void UpdatePlayerInput();
 	};
 }

@@ -104,13 +104,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\SDL2-2.26.0 %281%29\SDL2-2.26.0\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Programmi Vari\Informatics Projects\Bomberman-Cpp\Bomberman-C++\SDL2-2.26.0 %281%29\SDL2-2.26.0\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\alev4\Documents\C++\Bomberman-Cpp\Bomberman-C++\SDL2-2.26.0 %281%29\SDL2-2.26.0\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Programmi Vari\Informatics Projects\Bomberman-Cpp\Bomberman-C++\SDL2-2.26.0 %281%29\SDL2-2.26.0\lib\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -121,12 +121,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Programmi Vari\Informatics Projects\Bomberman-Cpp\Bomberman-C++\SDL2-2.26.0 %281%29\SDL2-2.26.0\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Programmi Vari\Informatics Projects\Bomberman-Cpp\Bomberman-C++\SDL2-2.26.0 %281%29\SDL2-2.26.0\lib\x64</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
